@@ -3,7 +3,7 @@ Contributors: TheMagnifico52
 Requires at least: 5.0
 Tested up to: 6.6
 Requires PHP: 7.2
-Stable tag: 0.5.9
+Stable tag: 0.6
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, custom-logo, grid-layout, one-column, two-columns, wide-blocks, custom-background, custom-colors, custom-header, custom-menu, block-styles, sticky-post, footer-widgets, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, threaded-comments, theme-options, rtl-language-support, left-sidebar, right-sidebar, e-commerce, education, post-formats
@@ -375,3 +375,11 @@ Webfont-Loader
 * Added show / hide post page content option in customizer.  
 * Added footer content alignment option in customizer.
 * Added show / hide single post page content option in customizer.
+
+= 0.6
+
+* Added scroll to top background color option in customizer.
+* Added scroll to top color option in customizer.
+* Added scroll to top font size option in customizer.
+* Added scroll to top border radius option in customizer.
+* Added POT file.

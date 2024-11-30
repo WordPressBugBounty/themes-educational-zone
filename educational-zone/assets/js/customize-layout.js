@@ -32,7 +32,7 @@
 
 			// General Setting
 
-			if ( id === 'educational_zone_preloader_hide' || id === 'educational_zone_sticky_header' || id === 'educational_zone_scroll_hide' || id === 'educational_zone_products_per_row' || id === 'educational_zone_scroll_top_position' ) {
+			if ( id === 'educational_zone_preloader_hide' || id === 'educational_zone_sticky_header' || id === 'educational_zone_scroll_hide' || id === 'educational_zone_products_per_row' ) {
 				$( '#customize-control-'+ id ).before('<li class="tab-title customize-control">'+ title  +'</li>');
 			} else {
 				$( '#customize-control-educational_zone_options-'+ id ).before('<li class="tab-title customize-control">'+ title +'</li>');
@@ -121,7 +121,6 @@
 		educational_zone_customizer_label( 'educational_zone_sticky_header', 'Sticky Header' );
 		educational_zone_customizer_label( 'educational_zone_scroll_hide', 'Scroll To Top' );
 		educational_zone_customizer_label('educational_zone_products_per_row', 'Woocommerce Setting');
-		educational_zone_customizer_label( 'educational_zone_scroll_top_position', 'Scroll to top Position' );
 		educational_zone_customizer_label( 'educational_zone_woocommerce_product_sale', 'Woocommerce Product Sale Positions' );
 		educational_zone_customizer_label( 'educational_zone_woo_product_border_radius', 'Woocommerce Product Border Radius' );
 

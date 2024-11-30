@@ -1,0 +1,859 @@
+# Copyright (C) 2024 TheMagnifico52
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Educational Zone 0.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/educational-zone\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-11-29T00:12:52+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: educational-zone\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Educational Zone"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://www.themagnifico.net/products/free-education-wordpress-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Educational Zone WordPress Theme is the latest theme that will do wonders for your education-related business by allowing you to create amazing websites. The Educational Zone is primarily developed for the educational field such as schools, colleges, high school, learnn app, tutorial kit, Online Library, Online Acting School, Online Courses, Digital Skills Development Center, universities and other educational institutions. It will also serve well for kindergartens, spoken english classes, e-book writing, coaching academies, educator, elementary school, language school, classes, ballet school, e-learning, management system, online courses, online education, playroom, school, school management system, tutor, study, kindergarten, learndash compatible, school, university, institutes, kindergarten, kids school, udemy, training centres, etc. This theme has an extremely well-organized layout with a sophisticated design and provides you ample personalization options to modify the theme as per your choice. Translation readiness is another important feature. Its retina ready design displays clearer and sharper images. The minimal design serves as a great advantage as it focuses on the main and important content. This Education WordPress theme is made user-friendly and is packed with several modern features. Built on bootstrap framework, Custom Background, custom colors Educational zone comes with clean and secure code and is made interactive by including call to action (CTA) buttons. Best SEO practices are implemented in this theme to ensure the best ranks on search engines. The Educational zone has all the necessary elements to frame a modern education website."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "TheMagnifico52"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.themagnifico.net/"
+msgstr ""
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: 404.php:26
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:41
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: comments.php:34
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:39
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:57
+#: comments.php:75
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:60
+#: comments.php:78
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:61
+#: comments.php:79
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:92
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:100
+#: inc/customizer.php:865
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:101
+#: inc/customizer.php:879
+msgid "Post Comment"
+msgstr ""
+
+#. Template Name of the theme
+msgid "No Featured Image Header"
+msgstr ""
+
+#. translators: %s: CMS name, i.e. WordPress.
+#: footer.php:79
+msgid "Proudly powered by %s"
+msgstr ""
+
+#. translators: 1: Theme name,
+#: footer.php:87
+msgid " %1$s "
+msgstr ""
+
+#. translators: 1: Theme author.
+#: footer.php:92
+msgid "by %1$s."
+msgstr ""
+
+#: footer.php:104
+msgid "TOP"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Full Width Template"
+msgstr ""
+
+#: functions.php:61
+msgid "Primary"
+msgstr ""
+
+#: functions.php:62
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:63
+msgid "Social Menu"
+msgstr ""
+
+#: functions.php:64
+#: template-parts/navigation/navigation-top.php:12
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:129
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:131
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:139
+#: inc/customizer.php:334
+msgid "Woocommerce Shop Page Sidebar"
+msgstr ""
+
+#: functions.php:149
+#: inc/customizer.php:360
+msgid "Woocommerce Single Product Page Sidebar"
+msgstr ""
+
+#: functions.php:159
+msgid "Footer Column 1"
+msgstr ""
+
+#: functions.php:169
+msgid "Footer Column 2"
+msgstr ""
+
+#: functions.php:179
+msgid "Footer Column 3"
+msgstr ""
+
+#: functions.php:448
+msgid "https://wordpress.org/support/theme/educational-zone"
+msgstr ""
+
+#: functions.php:451
+msgid "https://wordpress.org/support/theme/educational-zone/reviews/#new-post"
+msgstr ""
+
+#: functions.php:454
+msgid "https://demo.themagnifico.net/education-wordpress-theme/"
+msgstr ""
+
+#: functions.php:457
+#: inc/customizer.php:11
+msgid "https://www.themagnifico.net/products/education-wordpress-theme"
+msgstr ""
+
+#: functions.php:460
+#: functions.php:463
+msgid "https://demo.themagnifico.net/eard/wathiqa/educational-zone-pro-doc"
+msgstr ""
+
+#: functions.php:471
+msgid "Theme Options"
+msgstr ""
+
+#: functions.php:481
+msgid "Welcome To "
+msgstr ""
+
+#: functions.php:486
+#: functions.php:489
+msgid "Contact Support"
+msgstr ""
+
+#: functions.php:487
+msgid "Thank you for trying Educational Zone , feel free to contact us for any support regarding our theme."
+msgstr ""
+
+#: functions.php:495
+msgid "Checkout Premium"
+msgstr ""
+
+#: functions.php:496
+msgid "Our premium theme comes with extended features like demo content import , responsive layouts etc."
+msgstr ""
+
+#: functions.php:498
+msgid "Get Premium"
+msgstr ""
+
+#: functions.php:504
+#: functions.php:507
+msgid "Review"
+msgstr ""
+
+#: functions.php:505
+msgid "If You love Educational Zone theme then we would appreciate your review about our theme."
+msgstr ""
+
+#: functions.php:513
+#: functions.php:516
+msgid "Free Documentation"
+msgstr ""
+
+#: functions.php:514
+msgid "Our guide is available if you require any help configuring and setting up the theme. Easy and quick way to setup the theme."
+msgstr ""
+
+#: functions.php:523
+msgid "Free Vs Premium"
+msgstr ""
+
+#: functions.php:526
+msgid "Checkout Documentation"
+msgstr ""
+
+#: functions.php:529
+msgid "View Theme Demo"
+msgstr ""
+
+#: functions.php:535
+msgid "Theme Feature"
+msgstr ""
+
+#: functions.php:536
+msgid "Basic Version"
+msgstr ""
+
+#: functions.php:537
+msgid "Premium Version"
+msgstr ""
+
+#: functions.php:542
+msgid "Header Background Color"
+msgstr ""
+
+#: functions.php:547
+msgid "Custom Navigation Logo Or Text"
+msgstr ""
+
+#: functions.php:552
+msgid "Hide Logo Text"
+msgstr ""
+
+#: functions.php:557
+msgid "Premium Support"
+msgstr ""
+
+#: functions.php:562
+msgid "Fully SEO Optimized"
+msgstr ""
+
+#: functions.php:567
+msgid "Recent Posts Widget"
+msgstr ""
+
+#: functions.php:573
+msgid "Easy Google Fonts"
+msgstr ""
+
+#: functions.php:578
+msgid "Pagespeed Plugin"
+msgstr ""
+
+#: functions.php:583
+msgid "Only Show Header Image On Front Page"
+msgstr ""
+
+#: functions.php:588
+msgid "Show Header Everywhere"
+msgstr ""
+
+#: functions.php:593
+msgid "Custom Text On Header Image"
+msgstr ""
+
+#: functions.php:598
+msgid "Full Width (Hide Sidebar)"
+msgstr ""
+
+#: functions.php:603
+msgid "Only Show Upper Widgets On Front Page"
+msgstr ""
+
+#: functions.php:608
+msgid "Replace Copyright Text"
+msgstr ""
+
+#: functions.php:613
+msgid "Customize Upper Widgets Colors"
+msgstr ""
+
+#: functions.php:618
+msgid "Customize Navigation Color"
+msgstr ""
+
+#: functions.php:623
+msgid "Customize Post/Page Color"
+msgstr ""
+
+#: functions.php:628
+msgid "Customize Blog Feed Color"
+msgstr ""
+
+#: functions.php:633
+msgid "Customize Footer Color"
+msgstr ""
+
+#: functions.php:638
+msgid "Customize Sidebar Color"
+msgstr ""
+
+#: functions.php:643
+msgid "Customize Background Color"
+msgstr ""
+
+#: functions.php:648
+msgid "Importable Demo Content\t"
+msgstr ""
+
+#: functions.php:656
+msgid "Go Premium"
+msgstr ""
+
+#: functions.php:680
+msgid "Thank You For Choosing "
+msgstr ""
+
+#: functions.php:681
+msgid "Get Started With Theme By Clicking On Getting Started."
+msgstr ""
+
+#: functions.php:682
+msgid "Get started"
+msgstr ""
+
+#: functions.php:683
+msgid "Documentation"
+msgstr ""
+
+#: functions.php:686
+msgid "View Demo"
+msgstr ""
+
+#: header.php:38
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:14
+msgid "Buy Education Zone Pro"
+msgstr ""
+
+#: inc/customizer.php:25
+msgid "Education Zone Pro"
+msgstr ""
+
+#: inc/customizer.php:27
+msgid "GET PREMIUM"
+msgstr ""
+
+#: inc/customizer.php:100
+msgid "Logo Width"
+msgstr ""
+
+#: inc/customizer.php:110
+msgid "Enable Disable Title"
+msgstr ""
+
+#: inc/customizer.php:121
+msgid "Enable Disable Tagline"
+msgstr ""
+
+#: inc/customizer.php:132
+msgid "Site Title Color"
+msgstr ""
+
+#: inc/customizer.php:141
+msgid "Site Tagline Color"
+msgstr ""
+
+#: inc/customizer.php:152
+#: inc/customizer.php:406
+#: inc/customizer.php:433
+#: inc/customizer.php:461
+#: inc/customizer.php:533
+#: inc/customizer.php:581
+#: inc/customizer.php:649
+#: inc/customizer.php:770
+#: inc/customizer.php:892
+msgid "Customizer Options"
+msgstr ""
+
+#: inc/customizer.php:159
+msgid "General Settings"
+msgstr ""
+
+#: inc/customizer.php:168
+msgid "Show Theme Preloader"
+msgstr ""
+
+#: inc/customizer.php:179
+msgid "Preloader Background Color"
+msgstr ""
+
+#: inc/customizer.php:189
+msgid "Preloader First Dot Color"
+msgstr ""
+
+#: inc/customizer.php:199
+msgid "Preloader Second Dot Color"
+msgstr ""
+
+#: inc/customizer.php:209
+msgid "Show Sticky Header"
+msgstr ""
+
+#: inc/customizer.php:220
+msgid "Show Theme Scroll To Top"
+msgstr ""
+
+#: inc/customizer.php:232
+msgid "Scroll To Top Position"
+msgstr ""
+
+#: inc/customizer.php:235
+#: inc/customizer.php:376
+#: inc/customizer.php:697
+#: inc/customizer.php:713
+#: inc/customizer.php:750
+msgid "Right"
+msgstr ""
+
+#: inc/customizer.php:236
+#: inc/customizer.php:377
+#: inc/customizer.php:695
+#: inc/customizer.php:711
+#: inc/customizer.php:748
+msgid "Left"
+msgstr ""
+
+#: inc/customizer.php:237
+#: inc/customizer.php:378
+#: inc/customizer.php:696
+#: inc/customizer.php:712
+#: inc/customizer.php:749
+msgid "Center"
+msgstr ""
+
+#: inc/customizer.php:246
+msgid "Scroll Top Background Color"
+msgstr ""
+
+#: inc/customizer.php:256
+msgid "Scroll Top Color"
+msgstr ""
+
+#: inc/customizer.php:266
+msgid "Scroll Top Font Size"
+msgstr ""
+
+#: inc/customizer.php:267
+msgid "Put in px"
+msgstr ""
+
+#: inc/customizer.php:278
+msgid "Scroll To Top Border Radius"
+msgstr ""
+
+#: inc/customizer.php:296
+msgid "Product per row"
+msgstr ""
+
+#: inc/customizer.php:311
+msgid "Product per page"
+msgstr ""
+
+#: inc/customizer.php:322
+msgid "Hide Shop Page Sidebar"
+msgstr ""
+
+#: inc/customizer.php:337
+#: inc/customizer.php:363
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/customizer.php:338
+#: inc/customizer.php:364
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/customizer.php:348
+msgid "Hide Single Product Page Sidebar"
+msgstr ""
+
+#: inc/customizer.php:389
+msgid "Product Border Radius"
+msgstr ""
+
+#: inc/customizer.php:413
+msgid "Theme Color"
+msgstr ""
+
+#: inc/customizer.php:421
+msgid "Color Option"
+msgstr ""
+
+#: inc/customizer.php:440
+msgid "Welcome text "
+msgstr ""
+
+#: inc/customizer.php:448
+msgid "Welcome text"
+msgstr ""
+
+#: inc/customizer.php:468
+msgid "Social Icons "
+msgstr ""
+
+#: inc/customizer.php:476
+msgid "Enable Social Icon"
+msgstr ""
+
+#: inc/customizer.php:487
+msgid "Facebook link"
+msgstr ""
+
+#: inc/customizer.php:498
+msgid "Twitter link"
+msgstr ""
+
+#: inc/customizer.php:509
+msgid "Youtube link"
+msgstr ""
+
+#: inc/customizer.php:520
+msgid "Linkedin link"
+msgstr ""
+
+#: inc/customizer.php:544
+msgid "Banner Title"
+msgstr ""
+
+#: inc/customizer.php:556
+msgid "Banner description"
+msgstr ""
+
+#: inc/customizer.php:568
+msgid "Banner button link"
+msgstr ""
+
+#: inc/customizer.php:588
+msgid "Our Course Settings"
+msgstr ""
+
+#: inc/customizer.php:597
+msgid "Add Section Title"
+msgstr ""
+
+#: inc/customizer.php:599
+msgid "Our Course"
+msgstr ""
+
+#: inc/customizer.php:610
+msgid "Add Section Text"
+msgstr ""
+
+#: inc/customizer.php:612
+msgid "Lorem ipsum is dummy text"
+msgstr ""
+
+#: inc/customizer.php:637
+msgid "Select Category to display Services"
+msgstr ""
+
+#: inc/customizer.php:638
+msgid "Image Size (50 x 50)"
+msgstr ""
+
+#: inc/customizer.php:657
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer.php:666
+msgid "Footer Background Image"
+msgstr ""
+
+#: inc/customizer.php:677
+msgid "Footer Background Image Position"
+msgstr ""
+
+#: inc/customizer.php:679
+msgid "fixed"
+msgstr ""
+
+#: inc/customizer.php:680
+msgid "scroll"
+msgstr ""
+
+#: inc/customizer.php:692
+msgid "Footer Widget Heading Alignment"
+msgstr ""
+
+#: inc/customizer.php:708
+msgid "Footer Widget Content Alignment"
+msgstr ""
+
+#: inc/customizer.php:723
+msgid "Show / Hide Copyright"
+msgstr ""
+
+#: inc/customizer.php:733
+msgid "Replace the footer text"
+msgstr ""
+
+#: inc/customizer.php:745
+msgid "Copyright Content Alignment"
+msgstr ""
+
+#: inc/customizer.php:759
+msgid "Copyright Background Color"
+msgstr ""
+
+#: inc/customizer.php:777
+msgid "Post Settings"
+msgstr ""
+
+#: inc/customizer.php:787
+msgid "Enable Post Page Title"
+msgstr ""
+
+#: inc/customizer.php:789
+msgid "Check this box to enable title on post page."
+msgstr ""
+
+#: inc/customizer.php:798
+msgid "Enable Post Page Meta"
+msgstr ""
+
+#: inc/customizer.php:800
+msgid "Check this box to enable meta on post page."
+msgstr ""
+
+#: inc/customizer.php:809
+msgid "Enable Post Page Thumbnail"
+msgstr ""
+
+#: inc/customizer.php:811
+msgid "Check this box to enable thumbnail on post page."
+msgstr ""
+
+#: inc/customizer.php:820
+msgid "Enable Post Page Content"
+msgstr ""
+
+#: inc/customizer.php:822
+msgid "Check this box to enable content on post page."
+msgstr ""
+
+#: inc/customizer.php:831
+msgid "Enable Single Post Category and Tags"
+msgstr ""
+
+#: inc/customizer.php:833
+msgid "Check this box to enable post category and tags on single post."
+msgstr ""
+
+#: inc/customizer.php:842
+msgid "Enable Single Post Page Content"
+msgstr ""
+
+#: inc/customizer.php:844
+msgid "Check this box to enable content on single post page."
+msgstr ""
+
+#: inc/customizer.php:853
+msgid "Show / Hide Post Navigation"
+msgstr ""
+
+#: inc/customizer.php:863
+msgid "Add Comment Title"
+msgstr ""
+
+#: inc/customizer.php:877
+msgid "Add Comment Button Text"
+msgstr ""
+
+#. translators: %s: post date
+#. translators: %s: post author
+#: inc/template-tags.php:28
+#: inc/template-tags.php:34
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:43
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:59
+#: inc/template-tags.php:65
+msgid ", "
+msgstr ""
+
+#. translators: 1: number of Post
+#: inc/template-tags.php:61
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:67
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:75
+msgid "Edit %s"
+msgstr ""
+
+#: inc/template-tags.php:183
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:184
+#: inc/template-tags.php:207
+msgid "Edit"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:200
+msgid "%s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:204
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:212
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Template Name of the theme
+msgid "Left sidebar"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Custom Home Page"
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:23
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-image.php:41
+#: template-parts/content-page.php:25
+#: template-parts/content-single.php:48
+#: template-parts/content.php:41
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page.php:38
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-single.php:37
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/header/site-branding.php:29
+msgid "Read more"
+msgstr ""
+
+#: template-parts/navigation/navigation-top.php:9
+msgid "Open Button"
+msgstr ""
+
+#: template-parts/navigation/navigation-top.php:24
+msgid "Close Button"
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:51
+msgid "Your order"
+msgstr ""

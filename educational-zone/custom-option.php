@@ -11,11 +11,23 @@
         $educational_zone_theme_css .='}';
     }else if($educational_zone_scroll_position == 'Left'){
         $educational_zone_theme_css .='#button{';
-            $educational_zone_theme_css .='left: 20px;';
+            $educational_zone_theme_css .='left: 20px;right: auto;';
         $educational_zone_theme_css .='}';
     }else if($educational_zone_scroll_position == 'Center'){
         $educational_zone_theme_css .='#button{';
-            $educational_zone_theme_css .='right: 50%;left: 50%;';
+            $educational_zone_theme_css .='right: auto;left: 50%; transform:translateX(-50%);';
+        $educational_zone_theme_css .='}';
+    }
+
+    /*--------------------------- Scroll To Top Border Radius -------------------*/
+
+    $educational_zone_scroll_to_top_border_radius = get_theme_mod('educational_zone_scroll_to_top_border_radius');
+    $educational_zone_scroll_bg_color = get_theme_mod('educational_zone_scroll_bg_color');
+    $educational_zone_scroll_color = get_theme_mod('educational_zone_scroll_color');
+    $educational_zone_scroll_font_size = get_theme_mod('educational_zone_scroll_font_size');
+    if($educational_zone_scroll_to_top_border_radius != false || $educational_zone_scroll_bg_color != false || $educational_zone_scroll_color != false || $educational_zone_scroll_font_size != false){
+        $educational_zone_theme_css .='#colophon a#button{';
+            $educational_zone_theme_css .='border-radius: '.esc_attr($educational_zone_scroll_to_top_border_radius).'px; background-color: '.esc_attr($educational_zone_scroll_bg_color).'; color: '.esc_attr($educational_zone_scroll_color).' !important; font-size: '.esc_attr($educational_zone_scroll_font_size).'px;';
         $educational_zone_theme_css .='}';
     }
 

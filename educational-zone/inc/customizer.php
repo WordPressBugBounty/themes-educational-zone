@@ -201,6 +201,17 @@ function educational_zone_customize_register($wp_customize){
         'settings' => 'educational_zone_preloader_dot_2_color'
     )));
 
+    $wp_customize->add_setting('educational_zone_sticky_header', array(
+        'default' => false,
+        'sanitize_callback' => 'educational_zone_sanitize_checkbox'
+    ));
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize,'educational_zone_sticky_header',array(
+        'label'          => __( 'Show Sticky Header', 'educational-zone' ),
+        'section'        => 'educational_zone_general_settings',
+        'settings'       => 'educational_zone_sticky_header',
+        'type'           => 'checkbox',
+    )));
+
     $wp_customize->add_setting('educational_zone_scroll_hide', array(
         'default' => false,
         'sanitize_callback' => 'educational_zone_sanitize_checkbox'
@@ -218,6 +229,7 @@ function educational_zone_customize_register($wp_customize){
     ));
     $wp_customize->add_control('educational_zone_scroll_top_position',array(
         'type' => 'radio',
+        'label' => __( 'Scroll To Top Position', 'educational-zone' ),
         'section' => 'educational_zone_general_settings',
         'choices' => array(
             'Right' => __('Right','educational-zone'),
@@ -226,16 +238,52 @@ function educational_zone_customize_register($wp_customize){
         ),
     ) );
 
-    $wp_customize->add_setting('educational_zone_sticky_header', array(
-        'default' => false,
-        'sanitize_callback' => 'educational_zone_sanitize_checkbox'
+    $wp_customize->add_setting( 'educational_zone_scroll_bg_color', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_hex_color'
     ));
-    $wp_customize->add_control( new WP_Customize_Control($wp_customize,'educational_zone_sticky_header',array(
-        'label'          => __( 'Show Sticky Header', 'educational-zone' ),
-        'section'        => 'educational_zone_general_settings',
-        'settings'       => 'educational_zone_sticky_header',
-        'type'           => 'checkbox',
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'educational_zone_scroll_bg_color', array(
+        'label' => esc_html__('Scroll Top Background Color','educational-zone'),
+        'section' => 'educational_zone_general_settings',
+        'settings' => 'educational_zone_scroll_bg_color'
     )));
+
+    $wp_customize->add_setting( 'educational_zone_scroll_color', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_hex_color'
+    ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'educational_zone_scroll_color', array(
+        'label' => esc_html__('Scroll Top Color','educational-zone'),
+        'section' => 'educational_zone_general_settings',
+        'settings' => 'educational_zone_scroll_color'
+    )));
+
+    $wp_customize->add_setting('educational_zone_scroll_font_size',array(
+        'default'   => '16',
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    $wp_customize->add_control('educational_zone_scroll_font_size',array(
+        'label' => __('Scroll Top Font Size','educational-zone'),
+        'description' => __('Put in px','educational-zone'),
+        'section'   => 'educational_zone_general_settings',
+        'type'      => 'number'
+    ));
+
+    $wp_customize->add_setting( 'educational_zone_scroll_to_top_border_radius', array(
+        'default'              => '',
+        'transport'            => 'refresh',
+        'sanitize_callback'    => 'educational_zone_sanitize_number_range'
+    ) );
+    $wp_customize->add_control( 'educational_zone_scroll_to_top_border_radius', array(
+        'label'       => esc_html__( 'Scroll To Top Border Radius','educational-zone' ),
+        'section'     => 'educational_zone_general_settings',
+        'type'        => 'range',
+        'input_attrs' => array(
+            'step'             => 1,
+            'min'              => 1,
+            'max'              => 50,
+        ),
+    ) );
 
     // Product Columns
     $wp_customize->add_setting( 'educational_zone_products_per_row' , array(
