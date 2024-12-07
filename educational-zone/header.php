@@ -35,65 +35,66 @@ $educational_zone_sticky_header = get_theme_mod('educational_zone_sticky_header'
         </div>
     <?php } ?>
 <div id="page" class="site">
-    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'educational-zone'); ?></a>
+    <div class="<?php if(get_theme_mod('educational_zone_site_width_layout','Full Width') == 'Wide Width'){?>container-fluid<?php } elseif(get_theme_mod('educational_zone_site_width_layout','Full Width') == 'Container Width') {?>container<?php }?>">
+        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'educational-zone'); ?></a>
 
-    <header id="masthead" class="site-header fixed-top shadow-sm navbar-dark bg-primary">
-        <div class="socialmedia">
-            <?php get_template_part('template-parts/socialmedia/socialmedia', 'social'); ?>
-        </div>
-    </header>
-    <div class="header-menu" data-sticky="<?php echo esc_attr($data_sticky); ?>">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-9">
-                    <div class="navbar-brand">
-                       <?php if ( has_custom_logo() ) : ?>
-                            <div class="site-logo"><?php the_custom_logo(); ?></div>
-                        <?php endif; ?>
-                        <?php $blog_info = get_bloginfo( 'name' ); ?>
-                            <?php if ( ! empty( $blog_info ) ) : ?>
-                                <?php if ( is_front_page() && is_home() ) : ?>
-                                  <?php if( get_theme_mod('educational_zone_logo_title',true) != ''){ ?>
-                                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                                  <?php } ?>
-                                <?php else : ?>
-                                  <?php if( get_theme_mod('educational_zone_logo_title',true) != ''){ ?>
-                                    <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                                  <?php } ?>
-                                <?php endif; ?>
+        <header id="masthead" class="site-header fixed-top shadow-sm navbar-dark bg-primary">
+            <div class="socialmedia">
+                <?php get_template_part('template-parts/socialmedia/socialmedia', 'social'); ?>
+            </div>
+        </header>
+        <div class="header-menu" data-sticky="<?php echo esc_attr($data_sticky); ?>">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-9">
+                        <div class="navbar-brand">
+                           <?php if ( has_custom_logo() ) : ?>
+                                <div class="site-logo"><?php the_custom_logo(); ?></div>
                             <?php endif; ?>
-                            <?php
-                                $description = get_bloginfo( 'description', 'display' );
-                                if ( $description || is_customize_preview() ) :
-                            ?>
-                             <?php if( get_theme_mod('educational_zone_theme_description',false) != ''){ ?>
-                              <p class="site-description"><?php echo esc_html($description); ?></p>
-                            <?php } ?>
-                        <?php endif; ?>
+                            <?php $blog_info = get_bloginfo( 'name' ); ?>
+                                <?php if ( ! empty( $blog_info ) ) : ?>
+                                    <?php if ( is_front_page() && is_home() ) : ?>
+                                      <?php if( get_theme_mod('educational_zone_logo_title',true) != ''){ ?>
+                                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                                      <?php } ?>
+                                    <?php else : ?>
+                                      <?php if( get_theme_mod('educational_zone_logo_title',true) != ''){ ?>
+                                        <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+                                      <?php } ?>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                                <?php
+                                    $description = get_bloginfo( 'description', 'display' );
+                                    if ( $description || is_customize_preview() ) :
+                                ?>
+                                 <?php if( get_theme_mod('educational_zone_theme_description',false) != ''){ ?>
+                                  <p class="site-description"><?php echo esc_html($description); ?></p>
+                                <?php } ?>
+                            <?php endif; ?>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-8 col-md-8 col-3">
-                    <?php get_template_part('template-parts/navigation/navigation', 'top'); ?>
+                    <div class="col-lg-8 col-md-8 col-3">
+                        <?php get_template_part('template-parts/navigation/navigation', 'top'); ?>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <?php if (is_home() || is_front_page()) : ?>
+        <?php if (is_home() || is_front_page()) : ?>
 
-        <?php get_template_part('template-parts/header/site', 'branding'); ?>
+            <?php get_template_part('template-parts/header/site', 'branding'); ?>
 
-    <?php
+        <?php
 
-    /*
-	 * If a regular post or page, and not the front page, show the featured image.
-	 */
+        /*
+    	 * If a regular post or page, and not the front page, show the featured image.
+    	 */
 
-    elseif ((is_single() || ( is_page() && !is_page_template('featured-image.php') && !is_page_template('fullwidth2.php'))) && has_post_thumbnail()):
-        get_template_part('template-parts/header/featured-image', 'header');
-    endif; ?>
+        elseif ((is_single() || ( is_page() && !is_page_template('featured-image.php') && !is_page_template('fullwidth2.php'))) && has_post_thumbnail()):
+            get_template_part('template-parts/header/featured-image', 'header');
+        endif; ?>
 
-    <div id="content" class="site-content">
-        <div class="container">
-            <div class="row">
+        <div id="content" class="site-content">
+            <div class="container">
+                <div class="row">

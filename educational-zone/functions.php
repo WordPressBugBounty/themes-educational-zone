@@ -323,6 +323,9 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+/* TGM. */
+require get_parent_theme_file_path( '/inc/tgm.php' );
+
 /*radio button sanitization*/
 function educational_zone_sanitize_choices( $input, $setting ) {
     global $wp_customize;

@@ -160,6 +160,21 @@ function educational_zone_customize_register($wp_customize){
         'priority'   => 30,
     ));
 
+    $wp_customize->add_setting('educational_zone_site_width_layout',array(
+        'default' => 'Full Width',
+        'sanitize_callback' => 'educational_zone_sanitize_choices'
+    ));
+    $wp_customize->add_control('educational_zone_site_width_layout',array(
+        'label'       => esc_html__( 'Site Width Layout','educational-zone' ),
+        'type' => 'radio',
+        'section' => 'educational_zone_general_settings',
+        'choices' => array(
+            'Full Width' => __('Full Width','educational-zone'),
+            'Wide Width' => __('Wide Width','educational-zone'),
+            'Container Width' => __('Container Width','educational-zone')
+        ),
+    ) );
+
     $wp_customize->add_setting('educational_zone_preloader_hide', array(
         'default' => false,
         'sanitize_callback' => 'educational_zone_sanitize_checkbox'
@@ -820,6 +835,43 @@ function educational_zone_customize_register($wp_customize){
         'label'       => esc_html__('Enable Post Page Content', 'educational-zone'),
         'section'     => 'educational_zone_post_settings',
         'description' => esc_html__('Check this box to enable content on post page.', 'educational-zone'),
+    ));
+
+    $wp_customize->add_setting('educational_zone_post_page_excerpt_length',array(
+        'sanitize_callback' => 'educational_zone_sanitize_number_range',
+        'default'           => 30,
+    ));
+    $wp_customize->add_control('educational_zone_post_page_excerpt_length',array(
+        'label'       => esc_html__('Post Page Excerpt Length', 'educational-zone'),
+        'section'     => 'educational_zone_post_settings',
+        'type'        => 'range',
+        'input_attrs' => array(
+            'step'             => 1,
+            'min'              => 1,
+            'max'              => 50,
+        ),
+    ));
+
+    $wp_customize->add_setting('educational_zone_post_page_excerpt_suffix',array(
+        'sanitize_callback' => 'sanitize_text_field',
+        'default'           => '[...]',
+    ));
+    $wp_customize->add_control('educational_zone_post_page_excerpt_suffix',array(
+        'type'        => 'text',
+        'label'       => esc_html__('Post Page Excerpt Suffix', 'educational-zone'),
+        'section'     => 'educational_zone_post_settings',
+        'description' => esc_html__('For Ex. [...], etc', 'educational-zone'),
+    ));
+
+    $wp_customize->add_setting('educational_zone_post_page_pagination',array(
+        'sanitize_callback' => 'educational_zone_sanitize_checkbox',
+        'default'           => 1,
+    ));
+    $wp_customize->add_control('educational_zone_post_page_pagination',array(
+        'type'        => 'checkbox',
+        'label'       => esc_html__('Enable Post Page Pagination', 'educational-zone'),
+        'section'     => 'educational_zone_post_settings',
+        'description' => esc_html__('Check this box to enable pagination on post page.', 'educational-zone'),
     ));
 
     $wp_customize->add_setting('educational_zone_single_post_cat',array(

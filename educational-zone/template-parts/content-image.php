@@ -34,9 +34,8 @@ $educational_zone_post_page_content =  get_theme_mod( 'educational_zone_post_pag
 
     <?php if ($educational_zone_post_page_content == 1 ) {?>
         <div class="entry-summary">
+            <p><?php echo wp_trim_words( get_the_content(), esc_attr(get_theme_mod('educational_zone_post_page_excerpt_length', 30)) ); ?><?php echo esc_html(get_theme_mod('educational_zone_post_page_excerpt_suffix','[...]')); ?></p>
             <?php
-            the_excerpt();
-
             wp_link_pages(array(
                 'before' => '<div class="page-links">' . esc_html__('Pages:', 'educational-zone'),
                 'after' => '</div>',

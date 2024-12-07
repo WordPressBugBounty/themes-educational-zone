@@ -23,7 +23,7 @@
 	<?php educational_zone_post_thumbnail(); ?>
 
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<p><?php echo wp_trim_words( get_the_content(), esc_attr(get_theme_mod('educational_zone_post_page_excerpt_length', 30)) ); ?><?php echo esc_html(get_theme_mod('educational_zone_post_page_excerpt_suffix','[...]')); ?></p>
 	</div>
 
 	<footer class="entry-footer">

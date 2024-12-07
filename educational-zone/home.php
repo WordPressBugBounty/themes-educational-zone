@@ -54,9 +54,7 @@ $educational_zone_post_page_content =  get_theme_mod( 'educational_zone_post_pag
                                 <?php }?>
                                 <?php if ($educational_zone_post_page_content == 1 ) {?>
                                     <p class="entry-summary">
-                                        <?php
-                                        the_excerpt();
-                                        ?>
+                                        <?php echo wp_trim_words( get_the_content(), esc_attr(get_theme_mod('educational_zone_post_page_excerpt_length', 30)) ); ?><?php echo esc_html(get_theme_mod('educational_zone_post_page_excerpt_suffix','[...]')); ?>
                                     </p><!-- .entry-summary -->
                                 <?php }?>
                             </div>
@@ -68,7 +66,9 @@ $educational_zone_post_page_content =  get_theme_mod( 'educational_zone_post_pag
             </div>
 
             <div class="col-lg-12 my-5">
-                <?php the_posts_pagination(); ?>
+                <?php if( get_theme_mod('educational_zone_post_page_pagination',1) == 1){
+                    the_posts_pagination(); 
+                }?>
 
             </div>
 

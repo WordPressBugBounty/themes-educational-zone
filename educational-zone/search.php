@@ -14,7 +14,7 @@ get_header();
         <main id="main" class="site-main card module-border-wrap mb-4">
             <div class="card-body">
 
-                <?php if (have_posts()) : ?>
+                <?php if (have_posts()) { ?>
 
                     <header class="page-header">
                         <h4 class="page-title">
@@ -39,14 +39,15 @@ get_header();
 
                     endwhile;
 
-                    the_posts_navigation();
+                    if( get_theme_mod('educational_zone_post_page_pagination',1) == 1){ 
+                        the_posts_navigation();
+                    }
 
-                else :
+                }else {
 
                     get_template_part('template-parts/content', 'none');
 
-                endif;
-                ?>
+                } ?>
             </div>
         </main><!-- #main -->
     </section><!-- #primary -->

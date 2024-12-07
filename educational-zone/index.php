@@ -17,15 +17,14 @@ get_header(); ?>
     <div id="primary" class="content-area col-sm-12 <?php echo is_active_sidebar('sidebar-1') ? "col-lg-8" : "col-lg-12"; ?>">
         <main id="main" class="site-main">
             <?php
-                if (have_posts()) :
+                if (have_posts()) {
 
-                    if (is_home() && !is_front_page()) :
+                    if (is_home() && !is_front_page()) {
                         ?>
                         <header>
                             <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
                         </header>
-                    <?php
-                    endif;
+                    <?php }
 
                     /* Start the Loop */
                     while (have_posts()) :
@@ -40,13 +39,15 @@ get_header(); ?>
 
                     endwhile;
 
-                    the_posts_navigation();
+                    if( get_theme_mod('educational_zone_post_page_pagination',1) == 1){ 
+                        the_posts_navigation();
+                    }
 
-                else :
+                }else {
 
                     get_template_part('template-parts/content', 'none');
 
-                endif;
+                }
             ?>
         </main>
     </div>
