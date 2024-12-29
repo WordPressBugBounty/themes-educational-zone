@@ -46,7 +46,7 @@ $educational_zone_sticky_header = get_theme_mod('educational_zone_sticky_header'
         <div class="header-menu" data-sticky="<?php echo esc_attr($data_sticky); ?>">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-9">
+                    <div class="col-lg-4 col-md-4 col-9 align-self-center">
                         <div class="navbar-brand">
                            <?php if ( has_custom_logo() ) : ?>
                                 <div class="site-logo"><?php the_custom_logo(); ?></div>
@@ -73,7 +73,7 @@ $educational_zone_sticky_header = get_theme_mod('educational_zone_sticky_header'
                             <?php endif; ?>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-3">
+                    <div class="col-lg-8 col-md-8 col-3 align-self-center">
                         <?php get_template_part('template-parts/navigation/navigation', 'top'); ?>
                     </div>
                 </div>

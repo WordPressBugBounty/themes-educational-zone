@@ -113,6 +113,16 @@ function educational_zone_customize_register($wp_customize){
         'type'           => 'checkbox',
     )));
 
+    $wp_customize->add_setting('educational_zone_logo_title_font_size',array(
+        'default'   => '',
+        'sanitize_callback' => 'educational_zone_sanitize_number_absint'
+    ));
+    $wp_customize->add_control('educational_zone_logo_title_font_size',array(
+        'label' => esc_html__('Title Font Size','educational-zone'),
+        'section' => 'title_tagline',
+        'type'    => 'number'
+    ));
+
     $wp_customize->add_setting('educational_zone_theme_description', array(
         'default' => false,
         'sanitize_callback' => 'educational_zone_sanitize_checkbox'
@@ -123,6 +133,16 @@ function educational_zone_customize_register($wp_customize){
         'settings'       => 'educational_zone_theme_description',
         'type'           => 'checkbox',
     )));
+
+    $wp_customize->add_setting('educational_zone_logo_tagline_font_size',array(
+        'default'   => '',
+        'sanitize_callback' => 'educational_zone_sanitize_number_absint'
+    ));
+    $wp_customize->add_control('educational_zone_logo_tagline_font_size',array(
+        'label' => esc_html__('Tagline Font Size','educational-zone'),
+        'section'   => 'title_tagline',
+        'type'      => 'number'
+    ));
 
     $wp_customize->add_setting('educational_zone_logo_title_color', array(
         'default'           => '',

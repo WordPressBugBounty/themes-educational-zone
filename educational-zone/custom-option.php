@@ -163,3 +163,17 @@
             $educational_zone_theme_css .='text-align: right;';
         $educational_zone_theme_css .='}';
     }
+
+    /*---------------- Logo CSS ----------------------*/
+    $educational_zone_logo_title_font_size = get_theme_mod( 'educational_zone_logo_title_font_size');
+    $educational_zone_logo_tagline_font_size = get_theme_mod( 'educational_zone_logo_tagline_font_size');
+    if( $educational_zone_logo_title_font_size != '') {
+        $educational_zone_theme_css .='.navbar-brand a{';
+            $educational_zone_theme_css .='font-size: '. $educational_zone_logo_title_font_size. 'px;';
+        $educational_zone_theme_css .='}';
+    }
+    if( $educational_zone_logo_tagline_font_size != '') {
+        $educational_zone_theme_css .='.navbar-brand p{';
+            $educational_zone_theme_css .='font-size: '. $educational_zone_logo_tagline_font_size. 'px;';
+        $educational_zone_theme_css .='}';
+    }
