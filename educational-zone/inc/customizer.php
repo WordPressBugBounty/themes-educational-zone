@@ -570,6 +570,51 @@ function educational_zone_customize_register($wp_customize){
         'priority'    => 100
     )));
 
+    //Menu Settings
+    $wp_customize->add_section('educational_zone_menu_settings',array(
+        'title' => esc_html__('Menus Settings','educational-zone'),
+    ));
+
+    $wp_customize->add_setting('educational_zone_menu_font_size',array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    $wp_customize->add_control('educational_zone_menu_font_size',array(
+        'label' => esc_html__('Menu Font Size','educational-zone'),
+        'section' => 'educational_zone_menu_settings',
+        'type'  => 'number'
+    ));
+
+    $wp_customize->add_setting('educational_zone_nav_menu_text_transform',array(
+        'default'=> 'Uppercase',
+        'sanitize_callback' => 'educational_zone_sanitize_choices'
+    ));
+    $wp_customize->add_control('educational_zone_nav_menu_text_transform',array(
+        'type' => 'radio',
+        'label' => esc_html__('Menu Text Transform','educational-zone'),
+        'choices' => array(
+            'Uppercase' => __('Uppercase','educational-zone'),
+            'Capitalize' => __('Capitalize','educational-zone'),
+            'Lowercase' => __('Lowercase','educational-zone'),
+        ),
+        'section'=> 'educational_zone_menu_settings',
+    ));
+
+    $wp_customize->add_setting('educational_zone_nav_menu_font_weight',array(
+        'default'=> '700',
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    $wp_customize->add_control('educational_zone_nav_menu_font_weight',array(
+        'type' => 'number',
+        'label' => esc_html__('Menu Font Weight','educational-zone'),
+        'input_attrs' => array(
+            'step'             => 100,
+            'min'              => 100,
+            'max'              => 1000,
+        ),
+        'section'=> 'educational_zone_menu_settings',
+    ));
+
     // Banner title
     $wp_customize->add_setting('header_banner_title_setting', array(
         'default' => '',

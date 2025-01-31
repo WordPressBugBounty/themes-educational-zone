@@ -177,3 +177,36 @@
             $educational_zone_theme_css .='font-size: '. $educational_zone_logo_tagline_font_size. 'px;';
         $educational_zone_theme_css .='}';
     }
+
+    /*------------------ Nav Menus -------------------*/
+
+    $educational_zone_nav_menu = get_theme_mod( 'educational_zone_nav_menu_text_transform','Uppercase');
+    if($educational_zone_nav_menu == 'Capitalize'){
+        $educational_zone_theme_css .='.main-navigation .menu > li > a{';
+            $educational_zone_theme_css .='text-transform:Capitalize;';
+        $educational_zone_theme_css .='}';
+    }
+    if($educational_zone_nav_menu == 'Lowercase'){
+        $educational_zone_theme_css .='.main-navigation .menu > li > a{';
+            $educational_zone_theme_css .='text-transform:Lowercase;';
+        $educational_zone_theme_css .='}';
+    }
+    if($educational_zone_nav_menu == 'Uppercase'){
+        $educational_zone_theme_css .='.main-navigation .menu > li > a{';
+            $educational_zone_theme_css .='text-transform:Uppercase;';
+        $educational_zone_theme_css .='}';
+    }
+
+    $educational_zone_menu_font_size = get_theme_mod( 'educational_zone_menu_font_size');
+    if($educational_zone_menu_font_size != ''){
+        $educational_zone_theme_css .='.main-navigation .menu > li > a{';
+            $educational_zone_theme_css .='font-size: '.esc_attr($educational_zone_menu_font_size).'px;';
+        $educational_zone_theme_css .='}';
+    }
+
+    $educational_zone_nav_menu_font_weight = get_theme_mod( 'educational_zone_nav_menu_font_weight',700);
+    if($educational_zone_menu_font_size != ''){
+        $educational_zone_theme_css .='.main-navigation .menu > li > a{';
+            $educational_zone_theme_css .='font-weight: '.esc_attr($educational_zone_nav_menu_font_weight).';';
+        $educational_zone_theme_css .='}';
+    }
