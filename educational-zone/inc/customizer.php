@@ -206,6 +206,20 @@ function educational_zone_customize_register($wp_customize){
         'type'           => 'checkbox',
     )));
 
+    $wp_customize->add_setting('educational_zone_preloader_type',array(
+        'default' => 'Preloader 1',
+        'sanitize_callback' => 'educational_zone_sanitize_choices'
+    ));
+    $wp_customize->add_control('educational_zone_preloader_type',array(
+        'type' => 'radio',
+        'label' => esc_html__('Preloader Type','educational-zone'),
+        'section' => 'educational_zone_general_settings',
+        'choices' => array(
+            'Preloader 1' => __('Preloader 1','educational-zone'),
+            'Preloader 2' => __('Preloader 2','educational-zone'),
+        ),
+    ) );
+
     $wp_customize->add_setting( 'educational_zone_preloader_bg_color', array(
         'default' => '',
         'sanitize_callback' => 'sanitize_hex_color'
@@ -223,7 +237,8 @@ function educational_zone_customize_register($wp_customize){
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'educational_zone_preloader_dot_1_color', array(
         'label' => esc_html__('Preloader First Dot Color','educational-zone'),
         'section' => 'educational_zone_general_settings',
-        'settings' => 'educational_zone_preloader_dot_1_color'
+        'settings' => 'educational_zone_preloader_dot_1_color',
+        'active_callback' => 'educational_zone_preloader1'
     )));
 
     $wp_customize->add_setting( 'educational_zone_preloader_dot_2_color', array(
@@ -233,7 +248,19 @@ function educational_zone_customize_register($wp_customize){
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'educational_zone_preloader_dot_2_color', array(
         'label' => esc_html__('Preloader Second Dot Color','educational-zone'),
         'section' => 'educational_zone_general_settings',
-        'settings' => 'educational_zone_preloader_dot_2_color'
+        'settings' => 'educational_zone_preloader_dot_2_color',
+        'active_callback' => 'educational_zone_preloader1'
+    )));
+
+    $wp_customize->add_setting( 'educational_zone_preloader2_dot_color', array(
+        'default' => '#003e7d',
+        'sanitize_callback' => 'sanitize_hex_color'
+    ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'educational_zone_preloader2_dot_color', array(
+        'label' => esc_html__('Preloader Dot Color','educational-zone'),
+        'section' => 'educational_zone_general_settings',
+        'settings' => 'educational_zone_preloader2_dot_color',
+        'active_callback' => 'educational_zone_preloader2'
     )));
 
     $wp_customize->add_setting('educational_zone_sticky_header', array(

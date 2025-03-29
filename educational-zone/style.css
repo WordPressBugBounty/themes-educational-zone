@@ -5,7 +5,7 @@ Author: TheMagnifico52
 Theme URI: https://www.themagnifico.net/products/free-education-wordpress-theme
 Author URI: https://www.themagnifico.net/
 Description: Educational Zone WordPress Theme is the latest theme that will do wonders for your education-related business by allowing you to create amazing websites. The Educational Zone is primarily developed for the educational field such as schools, colleges, high school, learnn app, tutorial kit, Online Library, Online Acting School, Online Courses, Digital Skills Development Center, universities and other educational institutions. It will also serve well for kindergartens, spoken english classes, e-book writing, coaching academies, educator, elementary school, language school, classes, ballet school, e-learning, management system, online courses, online education, playroom, school, school management system, tutor, study, kindergarten, learndash compatible, school, university, institutes, kindergarten, kids school, udemy, training centres, etc. This theme has an extremely well-organized layout with a sophisticated design and provides you ample personalization options to modify the theme as per your choice. Translation readiness is another important feature. Its retina ready design displays clearer and sharper images. The minimal design serves as a great advantage as it focuses on the main and important content. This Education WordPress theme is made user-friendly and is packed with several modern features. Built on bootstrap framework, Custom Background, custom colors Educational zone comes with clean and secure code and is made interactive by including call to action (CTA) buttons. Best SEO practices are implemented in this theme to ensure the best ranks on search engines. The Educational zone has all the necessary elements to frame a modern education website.
-Version: 0.6.3
+Version: 0.6.4
 Tested up to: 6.6
 Requires PHP: 7.2
 Requires at least: 5.0
@@ -405,6 +405,66 @@ p.site-description {
   50% {
     transform: translatey(2.5rem);
     background-color: #003e7d;
+  }
+}
+
+/*--------------------------------------------------------------
+## Preloader 2
+--------------------------------------------------------------*/
+.loading2 {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+}
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width: 100px;
+  height: 100px;
+}
+.load hr {
+  border: 0;
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2s ease infinite;
+  background: #003e7d;
+  opacity: 1;
+}
+
+.load :first-child {
+  animation-delay: -1.5s;
+}
+.load :nth-child(2) {
+  animation-delay: -1s;
+}
+.load :nth-child(3) {
+  animation-delay: -0.5s;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(160%);
+  }
+  50% {
+    transform: translate(160%, 160%);
+  }
+  75% {
+    transform: translate(0, 160%);
   }
 }
 

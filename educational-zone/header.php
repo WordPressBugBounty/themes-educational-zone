@@ -28,12 +28,20 @@ $educational_zone_sticky_header = get_theme_mod('educational_zone_sticky_header'
     }
  ?>
 <?php if(get_theme_mod('educational_zone_preloader_hide','')){ ?>
+    <?php if(get_theme_mod('educational_zone_preloader_type','Preloader 1') == 'Preloader 1'){ ?>
         <div class="loading">
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
         </div>
-    <?php } ?>
+    <?php } elseif(get_theme_mod('educational_zone_preloader_type','Preloader 2') == 'Preloader 2') {?>
+        <div class="loading2">
+            <div class="load">
+                <hr/><hr/><hr/><hr/>
+            </div>
+        </div>
+    <?php }?>
+<?php } ?>
 <div id="page" class="site">
     <div class="<?php if(get_theme_mod('educational_zone_site_width_layout','Full Width') == 'Wide Width'){?>container-fluid<?php } elseif(get_theme_mod('educational_zone_site_width_layout','Full Width') == 'Container Width') {?>container<?php }?>">
         <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'educational-zone'); ?></a>

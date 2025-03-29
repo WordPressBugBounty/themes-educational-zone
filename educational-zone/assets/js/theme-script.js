@@ -96,7 +96,8 @@ jQuery(window).scroll(function() {
 });
 
 jQuery(document).ready(function() {
-window.addEventListener('load', (event) => {
+  window.addEventListener('load', (event) => {
     jQuery(".loading").delay(2000).fadeOut("slow");
+    jQuery(".loading2").delay(2000).fadeOut("slow");
   });
 })

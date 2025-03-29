@@ -231,21 +231,19 @@ function educational_zone_theme_color() {
     $educational_zone_preloader_bg_color = get_theme_mod('educational_zone_preloader_bg_color');
     $educational_zone_preloader_dot_1_color = get_theme_mod('educational_zone_preloader_dot_1_color');
     $educational_zone_preloader_dot_2_color = get_theme_mod('educational_zone_preloader_dot_2_color');
+  	$educational_zone_preloader2_dot_color = get_theme_mod('educational_zone_preloader2_dot_color');
     $educational_zone_logo_max_height = get_theme_mod('educational_zone_logo_max_height');
 
   	if(get_theme_mod('educational_zone_logo_max_height') == '') {
 		$educational_zone_logo_max_height = '24';
 	}
 
-    if(get_theme_mod('educational_zone_preloader_bg_color') == '') {
-			$educational_zone_preloader_bg_color = '#fff';
-		}
-		if(get_theme_mod('educational_zone_preloader_dot_1_color') == '') {
-			$educational_zone_preloader_dot_1_color = '#fff';
-		}
-		if(get_theme_mod('educational_zone_preloader_dot_2_color') == '') {
-			$educational_zone_preloader_dot_2_color = '#003e7d';
-		}
+	if(get_theme_mod('educational_zone_preloader_dot_1_color') == '') {
+		$educational_zone_preloader_dot_1_color = '#fff';
+	}
+	if(get_theme_mod('educational_zone_preloader_dot_2_color') == '') {
+		$educational_zone_preloader_dot_2_color = '#003e7d';
+	}
 
 	$educational_zone_theme_color_css = '
 		.custom-logo-link img{
@@ -260,7 +258,7 @@ function educational_zone_theme_color() {
 		.post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover, .posts-navigation .nav-previous a:hover, .posts-navigation .nav-next a:hover,.woocommerce-message, .woocommerce-info,.wp-block-quote, .wp-block-quote:not(.is-large):not(.is-style-large), .wp-block-pullquote{
 			border-color: '.esc_attr($educational_zone_theme_color).';
 		}
-		.loading{
+		.loading, .loading2{
 			background-color: '.esc_attr($educational_zone_preloader_bg_color).';
 		 }
 		 @keyframes loading {
@@ -273,6 +271,9 @@ function educational_zone_theme_color() {
 		  	transform: translatey(2.5rem);
 		    background-color: '.esc_attr($educational_zone_preloader_dot_2_color).';
 		  }
+		}
+		.load hr {
+			background-color: '.esc_attr($educational_zone_preloader2_dot_color).';
 		}
 	';
     wp_add_inline_style( 'educational-zone-style',$educational_zone_theme_color_css );
@@ -335,6 +336,20 @@ function educational_zone_sanitize_choices( $input, $setting ) {
     } else {
         return $setting->default;
     }
+}
+
+function educational_zone_preloader1(){
+	if(get_theme_mod('educational_zone_preloader_type', 'Preloader 1') == 'Preloader 1' ) {
+		return true;
+	}
+	return false;
+}
+
+function educational_zone_preloader2(){
+	if(get_theme_mod('educational_zone_preloader_type', 'Preloader 1') == 'Preloader 2' ) {
+		return true;
+	}
+	return false;
 }
 
 //Float
