@@ -5,7 +5,7 @@ Author: TheMagnifico52
 Theme URI: https://www.themagnifico.net/products/free-education-wordpress-theme
 Author URI: https://www.themagnifico.net/
 Description: Educational Zone WordPress Theme is the latest theme that will do wonders for your education-related business by allowing you to create amazing websites. The Educational Zone is primarily developed for the educational field such as schools, colleges, high school, learnn app, tutorial kit, Online Library, Online Acting School, Online Courses, Digital Skills Development Center, universities and other educational institutions. It will also serve well for kindergartens, spoken english classes, e-book writing, coaching academies, educator, elementary school, language school, classes, ballet school, e-learning, management system, online courses, online education, playroom, school, school management system, tutor, study, kindergarten, learndash compatible, school, university, institutes, kindergarten, kids school, udemy, training centres, etc. This theme has an extremely well-organized layout with a sophisticated design and provides you ample personalization options to modify the theme as per your choice. Translation readiness is another important feature. Its retina ready design displays clearer and sharper images. The minimal design serves as a great advantage as it focuses on the main and important content. This Education WordPress theme is made user-friendly and is packed with several modern features. Built on bootstrap framework, Custom Background, custom colors Educational zone comes with clean and secure code and is made interactive by including call to action (CTA) buttons. Best SEO practices are implemented in this theme to ensure the best ranks on search engines. The Educational zone has all the necessary elements to frame a modern education website.
-Version: 0.6.4
+Version: 0.6.5
 Tested up to: 6.6
 Requires PHP: 7.2
 Requires at least: 5.0
@@ -499,10 +499,10 @@ p.site-description {
 nav#site-navigation{
   padding: 0;
 }
-.main-navigation ul.sub-menu li a{
+.main-navigation ul.sub-menu li a, .main-navigation ul.children li a {
   color: #ffffff;
 }
-.main-navigation ul.sub-menu > li > a:hover, .main-navigation ul.sub-menu > li > a:focus{
+.main-navigation ul.sub-menu > li > a:hover, .main-navigation ul.sub-menu > li > a:focus, .main-navigation ul.children > li > a:hover, .main-navigation ul.children > li > a:focus {
   background: #003e7d;
   color: #fff !important;
 }
@@ -527,7 +527,7 @@ nav#site-navigation{
 .main-navigation .menu > li > a:hover{
   color: #003e7d;
 }
-.main-navigation .sub-menu {
+.main-navigation .sub-menu, .main-navigation .children {
   background-color: #333333;
   list-style: none;
   padding-left: 0;
@@ -538,20 +538,23 @@ nav#site-navigation{
   width: 200px !important;
 }
 .main-navigation .sub-menu > li > a:hover,
-.main-navigation .sub-menu > li > a:focus {
+.main-navigation .sub-menu > li > a:focus,
+.main-navigation .children > li > a:hover,
+.main-navigation .children > li > a:focus {
   background: #003e7d;
   color: #fff;
 }
-.main-navigation .sub-menu li ul.sub-menu {
+.main-navigation .sub-menu li ul.sub-menu, .main-navigation .children li ul.children {
   left: 200px !important;
   top: 0px;
 }
-.main-navigation .sub-menu > li {
+.main-navigation .sub-menu > li, .main-navigation .children > li {
   display: block;
   float: none;
   position: relative;
 }
-.main-navigation .sub-menu > li.menu-item-has-children .submenu-expand {
+.main-navigation .sub-menu > li.menu-item-has-children .submenu-expand,
+.main-navigation .children > li.menu-item-has-children .submenu-expand {
   display: inline-block;
   position: absolute;
   width: calc( 24px + 1rem);
@@ -562,26 +565,30 @@ nav#site-navigation{
   line-height: 1;
   padding: calc( .5 * 1rem);
 }
-.main-navigation .sub-menu > li.menu-item-has-children .submenu-expand {
+.main-navigation .sub-menu > li.menu-item-has-children .submenu-expand,
+.main-navigation .children > li.menu-item-has-children .submenu-expand  {
   margin-right: 0;
 }
 .main-navigation .sub-menu > li > a,
-.main-navigation .sub-menu > li > .menu-item-link-return {
+.main-navigation .sub-menu > li > .menu-item-link-return,
+.main-navigation .children > li > a,
+.main-navigation .children > li > .menu-item-link-return {
   color: #fff;
   display: block;
   padding: 15px;
   font-weight: 600;
 }
-.main-navigation .sub-menu > li > .menu-item-link-return {
+.main-navigation .children > li > .menu-item-link-return,
+.main-navigation .children > li > .menu-item-link-return {
   width: 100%;
   font-size: 22px;
   font-weight: normal;
   text-align: left;
 }
-.main-navigation .sub-menu > li > a:empty {
+.main-navigation .sub-menu > li > a:empty, .main-navigation .children > li > a:empty {
   display: none;
 }
-.main-navigation .sub-menu > li.mobile-parent-nav-menu-item {
+.main-navigation .sub-menu > li.mobile-parent-nav-menu-item, .main-navigation .children > li.mobile-parent-nav-menu-item {
   display: none;
   font-size: 0.88889em;
   font-weight: normal;
@@ -589,8 +596,13 @@ nav#site-navigation{
 .main-navigation .menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu,
 .main-navigation .menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu,
 .main-navigation .menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu,
-.main-navigation .menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menum,
-.main-navigation .menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu  {
+.main-navigation .menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu,
+.main-navigation .menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu,
+.main-navigation .menu .menu-item-has-children:not(.off-canvas):hover > .children,
+.main-navigation .menu .menu-item-has-children:not(.off-canvas):focus > .children,
+.main-navigation .menu .menu-item-has-children.is-focused:not(.off-canvas) > .children,
+.main-navigation .menu .menu-item-has-children:not(.off-canvas)[focus-within] > .children,
+.main-navigation .menu .menu-item-has-children:not(.off-canvas):focus-within > .children  {
   display: block;
   left: 0;
   margin-top: 0;
@@ -598,7 +610,7 @@ nav#site-navigation{
   width: auto;
   min-width: 100%;
 }
-.main-navigation .sub-menu > li a{
+.main-navigation .sub-menu > li a, .main-navigation .children > li a{
   color: #fff !important;
 }
 /*--------------------------------------------------------------

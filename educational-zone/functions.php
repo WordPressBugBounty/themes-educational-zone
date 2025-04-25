@@ -107,6 +107,64 @@ if ( ! function_exists( 'educational_zone_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'educational_zone_setup' );
 
+if ( ! function_exists( 'educational_zone_file_setup' ) ) :
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
+	 * Note that this function is hooked into the after_setup_theme hook, which
+	 * runs before the init hook. The init hook is too late for some features, such
+	 * as indicating support for post thumbnails.
+	 */
+	function educational_zone_file_setup() {
+
+		require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
+
+		/**
+		 * Custom template tags for this theme.
+		 */
+		require get_template_directory() . '/inc/template-tags.php';
+
+		/**
+		 * Implement the Custom Header feature.
+		 */
+		require get_template_directory() . '/inc/custom-header.php';
+
+		/**
+		 * Functions which enhance the theme by hooking into WordPress.
+		 */
+		require get_template_directory() . '/inc/template-functions.php';
+
+		/**
+		 * Customizer additions.
+		 */
+		require get_template_directory() . '/inc/customizer.php';
+
+		/* TGM. */
+		require get_parent_theme_file_path( '/inc/tgm.php' );
+
+		if ( ! defined( 'EDUCATIONAL_ZONE_CONTACT_SUPPORT' ) ) {
+			define('EDUCATIONAL_ZONE_CONTACT_SUPPORT',__('https://wordpress.org/support/theme/educational-zone','educational-zone'));
+		}
+		if ( ! defined( 'EDUCATIONAL_ZONE_REVIEW' ) ) {
+			define('EDUCATIONAL_ZONE_REVIEW',__('https://wordpress.org/support/theme/educational-zone/reviews/#new-post','educational-zone'));
+		}
+		if ( ! defined( 'EDUCATIONAL_ZONE_LIVE_DEMO' ) ) {
+			define('EDUCATIONAL_ZONE_LIVE_DEMO',__('https://demo.themagnifico.net/education-wordpress-theme/','educational-zone'));
+		}
+		if ( ! defined( 'EDUCATIONAL_ZONE_GET_PREMIUM_PRO' ) ) {
+			define('EDUCATIONAL_ZONE_GET_PREMIUM_PRO',__('https://www.themagnifico.net/products/education-wordpress-theme','educational-zone'));
+		}
+		if ( ! defined( 'EDUCATIONAL_ZONE_PRO_DOC' ) ) {
+			define('EDUCATIONAL_ZONE_PRO_DOC',__('https://demo.themagnifico.net/eard/wathiqa/educational-zone-pro-doc','educational-zone'));
+		}
+		if ( ! defined( 'EDUCATIONAL_ZONE_FREE_DOC' ) ) {
+			define('EDUCATIONAL_ZONE_FREE_DOC',__('https://demo.themagnifico.net/eard/wathiqa/educational-zone-pro-doc','educational-zone'));
+		}
+
+	}
+endif;
+add_action( 'after_setup_theme', 'educational_zone_file_setup' );
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -192,8 +250,6 @@ add_action( 'widgets_init', 'educational_zone_widgets_init' );
  */
 function educational_zone_scripts() {
 
-	require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
-
     // load bootstrap css
     wp_enqueue_style( 'bootstrap-css',get_template_directory_uri() . '/assets/css/bootstrap.css');
 
@@ -209,6 +265,8 @@ function educational_zone_scripts() {
 	wp_style_add_data('educational-zone-basic-style', 'rtl', 'replace');
 
     // load bootstrap js
+
+    wp_enqueue_script('jquery-js',get_template_directory_uri() . '/assets/js/jquery.js', array(), '', true );
     wp_enqueue_script('popper-js',get_template_directory_uri() . '/assets/js/popper.js', array(), '', true );
     wp_enqueue_script('bootstrap-js',get_template_directory_uri() . '/assets/js/bootstrap.js', array(), '', true );
     wp_enqueue_script('educational-zone-theme-js',get_template_directory_uri() . '/assets/js/theme-script.js', array(), '', true );
@@ -303,29 +361,6 @@ function educational_zone_sticky_header() {
 
 }
 add_action( 'wp_enqueue_scripts', 'educational_zone_sticky_header' );
-
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Functions which enhance the theme by hooking into WordPress.
- */
-require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
-
-/* TGM. */
-require get_parent_theme_file_path( '/inc/tgm.php' );
 
 /*radio button sanitization*/
 function educational_zone_sanitize_choices( $input, $setting ) {
@@ -461,25 +496,6 @@ function educational_zone_getpage_css($hook) {
 	wp_enqueue_style( 'educational-zone-demo-style', get_template_directory_uri() . '/assets/css/demo.css' );
 }
 add_action( 'admin_enqueue_scripts', 'educational_zone_getpage_css' );
-
-if ( ! defined( 'EDUCATIONAL_ZONE_CONTACT_SUPPORT' ) ) {
-define('EDUCATIONAL_ZONE_CONTACT_SUPPORT',__('https://wordpress.org/support/theme/educational-zone','educational-zone'));
-}
-if ( ! defined( 'EDUCATIONAL_ZONE_REVIEW' ) ) {
-define('EDUCATIONAL_ZONE_REVIEW',__('https://wordpress.org/support/theme/educational-zone/reviews/#new-post','educational-zone'));
-}
-if ( ! defined( 'EDUCATIONAL_ZONE_LIVE_DEMO' ) ) {
-define('EDUCATIONAL_ZONE_LIVE_DEMO',__('https://demo.themagnifico.net/education-wordpress-theme/','educational-zone'));
-}
-if ( ! defined( 'EDUCATIONAL_ZONE_GET_PREMIUM_PRO' ) ) {
-define('EDUCATIONAL_ZONE_GET_PREMIUM_PRO',__('https://www.themagnifico.net/products/education-wordpress-theme','educational-zone'));
-}
-if ( ! defined( 'EDUCATIONAL_ZONE_PRO_DOC' ) ) {
-define('EDUCATIONAL_ZONE_PRO_DOC',__('https://demo.themagnifico.net/eard/wathiqa/educational-zone-pro-doc','educational-zone'));
-}
-if ( ! defined( 'EDUCATIONAL_ZONE_FREE_DOC' ) ) {
-define('EDUCATIONAL_ZONE_FREE_DOC',__('https://demo.themagnifico.net/eard/wathiqa/educational-zone-pro-doc','educational-zone'));
-}
 
 add_action('admin_menu', 'educational_zone_themepage');
 function educational_zone_themepage(){

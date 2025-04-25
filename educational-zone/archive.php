@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-    <div id="primary" class="content-area col-sm-12 <?php echo is_active_sidebar('sidebar-1') ? "col-lg-8" : "col-lg-12"; ?>">
+    <div id="primary" class="content-area col-lg-8 col-md-8">
         <main id="main" class="site-main card shadow-sm module-border-wrap mb-4">
             <div class="card-body">
 
