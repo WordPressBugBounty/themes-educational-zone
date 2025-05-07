@@ -10,38 +10,42 @@
 get_header();
 ?>
 
-    <div id="primary" class="content-area col-lg-8 col-md-8">
-        <main id="main" class="site-main card shadow-sm module-border-wrap mb-4">
-            <div class="card-body">
+    <div id="skip-content" class="container">
+        <div class="row">
+            <div id="primary" class="content-area col-lg-9 col-lg-8">
+                <main id="main" class="site-main module-border-wrap">
+                    <div class="row">
+                        <?php if (have_posts()) { ?>
 
-                <?php if (have_posts()) { ?>
+                            <header class="page-header">
+                                <?php
+                                the_archive_title('<h2 class="page-title">', '</h2>');
+                                the_archive_description('<div class="archive-description">', '</div>');
+                                ?>
+                            </header>
 
-                    <header class="page-header">
-                        <?php
-                        the_archive_title('<h2 class="page-title">', '</h2>');
-                        the_archive_description('<div class="archive-description">', '</div>');
-                        ?>
-                    </header>
+                            <?php /* Start the Loop */
+                            while (have_posts()) :
+                                the_post();
+                                
+                                get_template_part( 'template-parts/content',get_post_format());
 
-                    <?php /* Start the Loop */
-                    while (have_posts()) :
-                        the_post();
-                        
-                        get_template_part( 'template-parts/content',get_post_format());
+                            endwhile; ?>
+                                
+                            <?php if( get_theme_mod('educational_zone_post_page_pagination',1) == 1){ 
+                                the_posts_navigation();
+                            }
 
-                    endwhile; ?>
-                        
-                    <?php if( get_theme_mod('educational_zone_post_page_pagination',1) == 1){ 
-                        the_posts_navigation();
-                    }
+                        }else {
 
-                }else {
+                            get_template_part('template-parts/content', 'none');
 
-                    get_template_part('template-parts/content', 'none');
-
-                } ?>
+                        } ?>
+                    </div>
+                </main>
             </div>
-        </main>
+            <?php get_sidebar(); ?>
+        </div>
     </div>
 <?php
 get_sidebar();

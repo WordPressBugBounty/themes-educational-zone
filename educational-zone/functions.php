@@ -242,6 +242,16 @@ function educational_zone_widgets_init() {
 		'before_title'  => '<h5 class="footer-column-widget-title">',
 		'after_title'   => '</h5>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Column 4', 'educational-zone' ),
+		'id'            => 'educational-zone-footer4',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h5 class="footer-column-widget-title">',
+		'after_title'   => '</h5>',
+	) );
 }
 add_action( 'widgets_init', 'educational_zone_widgets_init' );
 

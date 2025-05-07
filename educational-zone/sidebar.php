@@ -7,12 +7,9 @@
  * @package Educational Zone
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
 ?>
 
-<aside id="secondary" class="widget-area col-sm-12 col-lg-4 mt-xs-3">
+<aside id="secondary" class="widget-area col-sm-12 col-lg-3 mt-xs-3">
 	<?php if ( is_active_sidebar( 'sidebar' ) ) : ?>
 
             <?php dynamic_sidebar( 'sidebar' ); ?>

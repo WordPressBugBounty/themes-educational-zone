@@ -5,7 +5,7 @@ Author: TheMagnifico52
 Theme URI: https://www.themagnifico.net/products/free-education-wordpress-theme
 Author URI: https://www.themagnifico.net/
 Description: Educational Zone WordPress Theme is the latest theme that will do wonders for your education-related business by allowing you to create amazing websites. The Educational Zone is primarily developed for the educational field such as schools, colleges, high school, learnn app, tutorial kit, Online Library, Online Acting School, Online Courses, Digital Skills Development Center, universities and other educational institutions. It will also serve well for kindergartens, spoken english classes, e-book writing, coaching academies, educator, elementary school, language school, classes, ballet school, e-learning, management system, online courses, online education, playroom, school, school management system, tutor, study, kindergarten, learndash compatible, school, university, institutes, kindergarten, kids school, udemy, training centres, etc. This theme has an extremely well-organized layout with a sophisticated design and provides you ample personalization options to modify the theme as per your choice. Translation readiness is another important feature. Its retina ready design displays clearer and sharper images. The minimal design serves as a great advantage as it focuses on the main and important content. This Education WordPress theme is made user-friendly and is packed with several modern features. Built on bootstrap framework, Custom Background, custom colors Educational zone comes with clean and secure code and is made interactive by including call to action (CTA) buttons. Best SEO practices are implemented in this theme to ensure the best ranks on search engines. The Educational zone has all the necessary elements to frame a modern education website.
-Version: 0.6.5
+Version: 0.6.6
 Tested up to: 6.6
 Requires PHP: 7.2
 Requires at least: 5.0
@@ -484,7 +484,7 @@ p.site-description {
 }
 #site-navigation .menu ul li a {
   font-weight: 700;
-  color: #fff;
+  color: #003e7d;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -597,12 +597,7 @@ nav#site-navigation{
 .main-navigation .menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu,
 .main-navigation .menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu,
 .main-navigation .menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu,
-.main-navigation .menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu,
-.main-navigation .menu .menu-item-has-children:not(.off-canvas):hover > .children,
-.main-navigation .menu .menu-item-has-children:not(.off-canvas):focus > .children,
-.main-navigation .menu .menu-item-has-children.is-focused:not(.off-canvas) > .children,
-.main-navigation .menu .menu-item-has-children:not(.off-canvas)[focus-within] > .children,
-.main-navigation .menu .menu-item-has-children:not(.off-canvas):focus-within > .children  {
+.main-navigation .menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
   display: block;
   left: 0;
   margin-top: 0;
@@ -612,6 +607,51 @@ nav#site-navigation{
 }
 .main-navigation .sub-menu > li a, .main-navigation .children > li a{
   color: #fff !important;
+}
+.main-navigation .menu li.page_item_has_children:not(.off-canvas):hover > ul.children,
+.main-navigation .menu li.page_item_has_children:not(.off-canvas):focus > ul.children,
+.main-navigation .menu li.page_item_has_children.is-focused:not(.off-canvas) > ul.children,
+.main-navigation .menu li.page_item_has_children:not(.off-canvas)[focus-within] > ul.children,
+.main-navigation .menu li.page_item_has_children:not(.off-canvas):focus-within > ul.children  {
+  display: block;
+  left: 0;
+  margin-top: 0;
+  opacity: 1;
+  width: auto;
+  min-width: 100%;
+}
+
+.main-navigation .menu li.page_item_has_children ul.children {
+  background-color: #003e7d;
+  list-style: none;
+  padding-left: 0;
+  position: absolute;
+  opacity: 0;
+  left: -9999px;
+  z-index: 99999;
+  width: 200px !important;
+}
+.main-navigation .menu li {
+  display: inline;
+  position: relative;
+  font-size: 14px;
+}
+.main-navigation .menu li a {
+  color: #84847c;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+}
+.main-navigation .menu li ul.children li a{
+  display: block;
+}
+.main-navigation .menu li ul.children li a{
+  color: #ffffff !important;
+}
+.main-navigation .menu li.page_item_has_children ul.children li ul.children {
+  left: 200px !important;
+  top: 0px;
 }
 /*--------------------------------------------------------------
 # Navigation
@@ -1479,22 +1519,38 @@ h2.woocommerce-loop-product__title{
   display: table;
   width: 100%;
 }
-.card-body h5 {
-  margin: 0 0 15px;
-  text-transform: none;
-  font-size: 25px;
-  padding: 0 0 10px;
-  text-align: left;
-  letter-spacing: 2px;
-  font-weight: bold;
-  border-bottom: 3px double #ddd;
-  color: #fff;
+.widget-area .card-body h5,.sidebar h5,.sidebar .wp-block-search .wp-block-search__label,.sidebar .widget h2.wp-block-heading {
+  font-size: 20px;
+  color: #fff !important;
+  background: #003e7d;
+  padding: 15px 10px;
+  margin-bottom: 0;
 }
-.card-body input[type="search"] {
-  padding:10px 10px;
-  border:none;
-  font-size:15px;
-  color:#000;
+.widget-area .card-body {
+  border: solid 1px #dcdcdc;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+#colophon h5 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+#colophon ul, #colophon p{
+  color: #ffffff;
+}
+#colophon a:hover{
+  color: #000;
+}
+.widget-area .card-body h5,.sidebar .wp-block-search .wp-block-search__label,.sidebar .widget h2.wp-block-heading{
+  margin-bottom: 20px;
+}
+.widget-area .card-body input[type="search"] {
+  padding: 10px;
+  width: 100%;
+  border: solid 1px #dcdcdc;
+  font-size: 15px;
 }
 .card-body label{
   margin-bottom: 0;
@@ -1503,9 +1559,25 @@ h2.woocommerce-loop-product__title{
   background:#000;
   border:none;
   color:#fff;
-  padding:10px;
   font-size:15px;
   margin:0 !important;
+  padding: 8px;
+  margin-left: 10px !important;
+  color: #fff;
+}
+.card-body input[type="submit"], .card-body button[type="submit"] {
+
+  background: #003e7d;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.card-body form{
+  display: flex;
+  flex: auto;
+  flex-wrap: nowrap;
+  max-width: 100%;
 }
 .card-body aside {
   margin-bottom: 30px;

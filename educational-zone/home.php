@@ -17,15 +17,15 @@ $educational_zone_post_page_thumb = get_theme_mod( 'educational_zone_post_page_t
 $educational_zone_post_page_content =  get_theme_mod( 'educational_zone_post_page_content', 1 );
 ?>
 
-    <div id="primary" class="content-area col-sm-12 <?php echo is_active_sidebar('sidebar-1') ? "col-lg-8" : "col-lg-12"; ?>">
+    <div id="primary" class="content-area col-lg-9n col-md-8">
         <main id="main" class="site-main">
-            <div class="card-columns">
+            <div class="card-columns row">
                 <?php
 
                 if (have_posts()) :
 
                 while (have_posts()) :the_post(); ?>
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <article class="col-lg-6" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="card module-border-wrap hvr-glow">
                             <?php if ($educational_zone_post_page_thumb == 1 ) {?>
                                 <?php if(has_post_thumbnail()){
