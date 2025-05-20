@@ -1,9 +1,9 @@
 === Educational Zone ===
 Contributors: TheMagnifico52
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 6.8
 Requires PHP: 7.2
-Stable tag: 0.6.6
+Stable tag: 0.6.7
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, custom-logo, grid-layout, one-column, two-columns, wide-blocks, custom-background, custom-colors, custom-header, custom-menu, block-styles, sticky-post, footer-widgets, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, threaded-comments, theme-options, rtl-language-support, left-sidebar, right-sidebar, e-commerce, education, post-formats
@@ -103,326 +103,268 @@ Webfont-Loader
 
 == Changelog ==
 
-= 0.1
-
-* Initial release
-
-= 0.1.1
-
-* Fixed Ns themecheck errors and text domain issue
-* Initial release
-
-= 0.1.2
-
-* Added skip links for accessibility
-
-= 0.1.3
-
-* Fixed required and licence errors
-
-= 0.1.4
-
-* Fixed review errors
-
-= 0.1.5
-
-* added skiplinks and keyboard navigation.
-
-= 0.1.6
-
-* Fixed skiplinks and keyboard navigation.
-
-= 0.1.7
-
-* Fixed skiplinks issue.
-
-= 0.1.8
-
-* Updated theme with upgrade option
-
-= 0.2
-
-* Updated header section.
-* Fixed menu isuue.
-* Fixed keyboard navigation.
-* Removed extra prefixing
-
-= 0.2.1
-
-* Fixed menu color isuue.
-* Changed keyboard navigation code.
-* Removed google plus icon.
-* Added RTL tag.
-
-= 0.2.2
-
-* Added required WP theme points.
-* Added Woocommerce CSS.
-* Changed sidebar CSS.
-
-= 0.2.3
-
-* Added Wide Align and Block Editor Styles tags.
-* Changed CSS.
-* Added Full Width Template file.
-
-= 0.2.4
-
-* Added footer widget, editer style and sticky post tags.
-* Removed unused CSS.
-
-= 0.2.5
-
-* Fixed escaping issues.
-* Updated RTL file.
-
-= 0.2.6
-
-* Added the Scroll Back Funcationality.
-
-= 0.2.7
-
-* Bugs Fixes.
-
-= 0.2.8
-
-* Added theme color option.
-* Added new tags.
-* Resolved themes check issues.
-
-= 0.2.9
-
-* Added Woocommerce CSS.
-* Resolved Comment CSS.
-
-= 0.3
-
-* Removed unused functions.
-
-= 0.3.1
-
-* Resolved themescheck errors.
-
-= 0.3.2
-
-* Added Sticky Header.
-
-= 0.3.3
-
-* Added Get-Started.
-
-= 0.3.4
-
-* Resolve responsive issue.
-* Updated RTL file.
-
-= 0.3.5
-
-* Added CSS classes.
-* Updated footer link.
-* Updated PHP version.
-
-= 0.3.6
-
-* Added general settings .
-
-= 0.3.7
-
-* Resolve console error.
-* Updated sticky-header.
-* Updated custom header.
-
-= 0.3.8
-
-* Added web-font file.
-* Added require atleast.
-* Updated PHP version.
-* Prefixing the variable.
-* Changed flatly to Bootstrap.
-* Escaping URLs.
-
-= 0.3.9
-
-* Added scroll top condition.
-* Updated header settings.
-
-= 0.4.0
-
-* Added social icon on off setting.
-* Added preloader color setting.
-
-= 0.4.1
-
-* Updated customizer.
-
-= 0.4.2
-
-* Added product per page setting.
-* Added product per row setting.
-* Removes unuse logo css. 
-
-= 0.4.3
-
-* Added post setting in customizer.
-* Added post page meta on off setting in customizer.
-* Added post page title on off setting in customizer.
-* Changed gpl license version.
-* Changed gpl license uri.
-
-= 0.4.4
-
-* Added post page thumbnail on off setting in customizer. 
-* Added tag for rtl.
-* Added rtl css.
-* Added scroll to top position setting.
-* Added scroll to top position.
-* Added custom-option file.
-* Added on of footer copyright option in footer text section.
-
-= 0.4.5
-
-* Added single post category and tags on off setting.
-* Added footer columns.
-* Done the css for woocommerce pages buttons.
-* Added logo resize setting.
-
-= 0.4.6
-
-* Changed redirection function.
-
-= 0.4.7
-
-* Added single product page sidebar widget.
-* Added show/hide single product page sidebar option in customizer.
-* Added single product page sidebar layout option in customizer.
-* Added shop page sidebar widget.
-* Added show/hide shop page sidebar option in customizer.
-* Added shop page sidebar layout option in customizer.
-
-= 0.4.8
-
-* Resolved footer css issue.
-* Resolved minor issues of menus.
-* Added css for responsive menu.
-* Added condition for site tagline.
-
-= 0.4.9
-
-* Added single post page comment title option in customizer.
-* Added single post page comment button text option in customizer.
-* Added product sale badge position option in customizer.
-* Removed redirectional function.
-* Added get started notice function.
-
-= 0.5
-
-* Changed get started.
-* Changed rtl css.
-* Added hover.
-
-= 0.5.1
-
-* Added hover for homepage.
-* Added hover for post page.
-
-= 0.5.2
-
-* Added footer background image option in customizer.
-
-= 0.5.3
-
-* Added show/ hide post navigation option in customizer.
-* Added copyright background color option in customizer.
-
-= 0.5.4
-
-* Added woocommerce product border radius option in customizer.
-* Added site title color option in customizer.
-* Added site tagline color option in customizer.
-
-= 0.5.5
-
-* Added upsale button in different section in customizer.
-* Added free doc link in get started.
-* Done shop page product css in responsive media.
-
-= 0.5.6
-
-* Changed the urls for the theme.
-
-= 0.5.7
-
-* Updated archive product template.
-* Added default image in archive post.
-* Updated lite & pro URLs.
-
-= 0.5.8
-
-* Added latest bootstrap version.
-* Added free doc button in get started.
-* Added css in media for container width.
-* Added css for submenu.
-* Replaced  get start function
-* Replaced admin js
-* Done responsive of header and slider.
-* Done homepage css.
-* Added footer widget heading alignment option in customizer.
-* Added footer background image position option in customizer.
-
-= 0.5.9
-
-* Added copyright content alignment option in customizer.
-* Added show / hide post page content option in customizer.  
-* Added footer content alignment option in customizer.
-* Added show / hide single post page content option in customizer.
-
-= 0.6
-
-* Added scroll to top background color option in customizer.
-* Added scroll to top color option in customizer.
-* Added scroll to top font size option in customizer.
-* Added scroll to top border radius option in customizer.
-* Added POT file.
-
-= 0.6.1
-
-* Added blog page excerpt length option in customizer.
-* Added blog page excerpt suffix option in customizer.
-* Added show / hide blog page navigation in customizer.
-* Added site width layout option in customizer.
-* Added plugin in TGM file.
+= 0.6.7 =
+* Updated getstart.
+* Added some getstart file.
+
+= 0.6.6 =
+* Added menu CSS.
+* Resolved sidebar issue.
+* Enhanced preview layout CSS.
+* Added default footer.
+
+= 0.6.5 =
+* Resolved text domain error.
+* Added default sidebar.
+* Updated default sidebar CSS.
+* Added default footer.
+* Changed menu CSS.
+
+= 0.6.4 =
+* Added preloader type option in Customizer.
+* Added preloader color option in Customizer.
 * Updated POT file.
 
-= 0.6.2
+= 0.6.3 =
+* Added menu font size option in Customizer.
+* Added menu font weight option in Customizer.
+* Added menu text transform option in Customizer.
+* Updated POT file.
 
+= 0.6.2 =
 * Added site title font size option.
 * Added site tagline font size option.
 * Updated POT file.
 
-= 0.6.3
-
-* Added menu font size option in customizer.
-* Added menu font weight option in customizer.
-* Added menu text transform option in customizer.
+= 0.6.1 =
+* Added blog page excerpt length option in Customizer.
+* Added blog page excerpt suffix option in Customizer.
+* Added show/hide blog page navigation in Customizer.
+* Added site width layout option in Customizer.
+* Added plugin in TGM file.
 * Updated POT file.
 
-= 0.6.4
+= 0.6 =
+* Added scroll-to-top background color option in Customizer.
+* Added scroll-to-top color option in Customizer.
+* Added scroll-to-top font size option in Customizer.
+* Added scroll-to-top border radius option in Customizer.
+* Added POT file.
 
-* Added preloader type option in customizer.
-* Added preloader color option in customizer.
-* Updated POT file.
+= 0.5.9 =
+* Added copyright content alignment option.
+* Added show/hide post page content option.
+* Added footer content alignment option.
+* Added show/hide single post page content option.
 
-= 0.6.5
+= 0.5.8 =
+* Added latest Bootstrap version.
+* Added free doc button in Get Started.
+* Added media CSS for container width.
+* Added submenu CSS.
+* Replaced Get Started function.
+* Replaced admin JS.
+* Updated responsive header and slider.
+* Updated homepage CSS.
+* Added footer widget heading alignment option.
+* Added footer background image position option.
 
-* Resolved textdamain error.
-* Added default sidebar.
-* Updated default sidebar css.
-* Added default footer.
-* Change menu css.
+= 0.5.7 =
+* Updated archive product template.
+* Added default image in archive post.
+* Updated Lite & Pro URLs.
 
-= 0.6.6
+= 0.5.6 =
+* Changed the URLs for the theme.
 
-* Added menu css.
-* Resolved sidebar issue.
-* Enhance preview layout css.
-* Added default footer.
+= 0.5.5 =
+* Added upsell button in different sections of Customizer.
+* Added free doc link in Get Started.
+* Updated shop page product CSS for responsive view.
+
+= 0.5.4 =
+* Added WooCommerce product border radius option in Customizer.
+* Added site title color option.
+* Added site tagline color option.
+
+= 0.5.3 =
+* Added show/hide post navigation option in Customizer.
+* Added copyright background color option.
+
+= 0.5.2 =
+* Added footer background image option in Customizer.
+
+= 0.5.1 =
+* Added hover for homepage.
+* Added hover for post page.
+
+= 0.5 =
+* Updated Get Started.
+* Updated RTL CSS.
+* Added hover effect.
+
+= 0.4.9 =
+* Added single post page comment title option in Customizer.
+* Added comment button text option.
+* Added product sale badge position option.
+* Removed redirection function.
+* Added Get Started notice function.
+
+= 0.4.8 =
+* Fixed footer CSS issue.
+* Resolved minor menu issues.
+* Added responsive menu CSS.
+* Added site tagline condition.
+
+= 0.4.7 =
+* Added single product page sidebar widget.
+* Added show/hide option for product sidebar in Customizer.
+* Added product sidebar layout option.
+* Added shop page sidebar options.
+
+= 0.4.6 =
+* Changed redirection function.
+
+= 0.4.5 =
+* Added single post category and tags toggle.
+* Added footer columns.
+* Styled WooCommerce page buttons.
+* Added logo resize option.
+
+= 0.4.4 =
+* Added post thumbnail toggle option.
+* Added RTL tag and CSS.
+* Added scroll-to-top position setting.
+* Added custom options file.
+* Added footer copyright toggle.
+
+= 0.4.3 =
+* Added post settings in Customizer.
+* Added toggle options for post meta, title, and thumbnail.
+* Updated GPL license version and URI.
+
+= 0.4.2 =
+* Added product per page and per row settings.
+* Removed unused logo CSS.
+
+= 0.4.1 =
+* Updated Customizer.
+
+= 0.4.0 =
+* Added social icons toggle.
+* Added preloader color setting.
+
+= 0.3.9 =
+* Added scroll-to-top toggle.
+* Updated header settings.
+
+= 0.3.8 =
+* Added web-font file.
+* Added "Requires at least" tag.
+* Updated PHP version.
+* Prefixed variables.
+* Replaced Flatly with Bootstrap.
+* Escaped URLs.
+
+= 0.3.7 =
+* Resolved console error.
+* Updated sticky header.
+* Updated custom header.
+
+= 0.3.6 =
+* Added general settings.
+
+= 0.3.5 =
+* Added CSS classes.
+* Updated footer link.
+* Updated PHP version.
+
+= 0.3.4 =
+* Fixed responsive issue.
+* Updated RTL file.
+
+= 0.3.3 =
+* Added Get Started.
+
+= 0.3.2 =
+* Added Sticky Header.
+
+= 0.3.1 =
+* Resolved Theme Check errors.
+
+= 0.3 =
+* Removed unused functions.
+
+= 0.2.9 =
+* Added WooCommerce CSS.
+* Fixed comment CSS.
+
+= 0.2.8 =
+* Added theme color option.
+* Added new tags.
+* Resolved Theme Check issues.
+
+= 0.2.7 =
+* Bug fixes.
+
+= 0.2.6 =
+* Added Scroll Back functionality.
+
+= 0.2.5 =
+* Fixed escaping issues.
+* Updated RTL file.
+
+= 0.2.4 =
+* Added footer widget.
+* Added editor style and sticky post tags.
+* Removed unused CSS.
+
+= 0.2.3 =
+* Added wide align and block editor styles.
+* Updated CSS.
+* Added full-width template.
+
+= 0.2.2 =
+* Added required WP theme features.
+* Added WooCommerce CSS.
+* Changed sidebar CSS.
+
+= 0.2.1 =
+* Fixed menu color issue.
+* Updated keyboard navigation.
+* Removed Google+ icon.
+* Added RTL tag.
+
+= 0.2 =
+* Updated header section.
+* Fixed menu issue.
+* Fixed keyboard navigation.
+* Removed extra prefixing.
+
+= 0.1.8 =
+* Added upgrade option.
+
+= 0.1.7 =
+* Fixed skip links issue.
+
+= 0.1.6 =
+* Fixed skip links and keyboard navigation.
+
+= 0.1.5 =
+* Added skip links and keyboard navigation.
+
+= 0.1.4 =
+* Fixed review errors.
+
+= 0.1.3 =
+* Fixed required and license errors.
+
+= 0.1.2 =
+* Added skip links for accessibility.
+
+= 0.1.1 =
+* Fixed Theme Check errors and text domain issue.
+* Initial release.
+
+= 0.1 =
+* Initial release.

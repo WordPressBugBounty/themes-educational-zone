@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-    <div id="primary" class="content-area col-lg-9 col-md-8"; ?>">
+    <div id="primary" class="content-area col-lg-9 col-md-8">
         <main id="main" class="site-main card shadow-sm module-border-wrap mb-4">
             <?php
             while (have_posts()) :
