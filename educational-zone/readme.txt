@@ -3,7 +3,7 @@ Contributors: TheMagnifico52
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.2
-Stable tag: 0.6.8
+Stable tag: 0.6.9
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: blog, custom-logo, grid-layout, one-column, two-columns, wide-blocks, custom-background, custom-colors, custom-header, custom-menu, block-styles, sticky-post, footer-widgets, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, threaded-comments, theme-options, rtl-language-support, left-sidebar, right-sidebar, e-commerce, education, post-formats
@@ -102,6 +102,10 @@ Webfont-Loader
 	Source: https://pxhere.com/en/photo/1190561
 
 == Changelog ==
+
+= 0.6.9
+
+* Resolved some minor bugs.
 
 = 0.6.8 =
 
